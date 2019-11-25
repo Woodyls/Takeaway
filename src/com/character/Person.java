@@ -1,4 +1,4 @@
-package demo;
+package com.character;
 
 public  class Person {
 	String name=null;

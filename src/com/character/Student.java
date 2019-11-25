@@ -1,4 +1,4 @@
-package demo;
+package com.character;
 
 public class Student extends Person{
 	public Student(String name,String password)
