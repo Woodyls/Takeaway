@@ -1,16 +1,19 @@
 package com.character;
 
-public  class Person {
-	String name=null;
-	String password=null;
+public class Person {
+	String ID = null;
+	String PW = null;
+
 	public Person() {
-		
+
 	}
-	public String getName() 	{
-		return name;
+
+	public String getID() {
+		return ID;
 	}
-	public String getPassword() {
-		return password;
+
+	public String getPW() {
+		return PW;
 	}
-	
+
 }

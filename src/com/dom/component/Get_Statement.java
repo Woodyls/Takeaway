@@ -1,10 +1,10 @@
-package com.sql.inquire;
+package com.dom.component;
 
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class Inquire_Statement {
+public class Get_Statement {
 	public static Statement get_Statement(Connection conn) {
 		// 返回Statement执行数据库语句操作对象
 		java.sql.Statement stmt = null;

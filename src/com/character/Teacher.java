@@ -1,8 +1,8 @@
 package com.character;
 
-public class Teacher extends Person{
-	public Teacher(String name,String password) {
-		this.name=name;
-		this.password = password;
+public class Teacher extends Person {
+	public Teacher(String ID, String PW) {
+		this.ID = ID;
+		this.PW = PW;
 	}
 }

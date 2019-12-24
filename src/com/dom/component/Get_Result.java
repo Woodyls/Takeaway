@@ -1,11 +1,11 @@
-package com.sql.inquire;
+package com.dom.component;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Inquire_Result {
+public class Get_Result {
 
-	public static ResultSet get_Inquire_Result(String sql, java.sql.Statement stmt) {
+	public static ResultSet get_Result(String sql, java.sql.Statement stmt) {
 		// 返回查询结果
 		ResultSet rs = null;
 		try {

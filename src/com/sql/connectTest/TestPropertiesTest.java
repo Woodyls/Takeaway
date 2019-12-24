@@ -1,4 +1,4 @@
-package com.sql.connect;
+package com.sql.connectTest;
 
 import org.junit.Before;
 import org.junit.Test;

@@ -21,7 +21,7 @@
   </servlet-mapping>
   <servlet>
   	<servlet-name>LoginServlet</servlet-name>
-  	<servlet-class>demo.LoginServlet</servlet-class>
+  	<servlet-class>com.character.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>

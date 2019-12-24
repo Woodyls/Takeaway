@@ -1,4 +1,4 @@
-package com.sql.inquire;
+package com.sql.inquireTest;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,6 +9,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 import com.character.Student;
+import com.dom.component.Get_Component;
+import com.sql.inquire.Inquire_User;
 
 public class Inquire_UserTest {
 
@@ -36,8 +38,8 @@ public class Inquire_UserTest {
 			e.printStackTrace();
 		}
 		Student stu = new Student("test1", "12346");
-
-		Inquire_User.inquire(stu, conn);
+		Get_Component component = new Get_Component();
+		Inquire_User.inquire_person(stu, conn, component);
 	}
 
 }

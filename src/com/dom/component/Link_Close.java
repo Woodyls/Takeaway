@@ -1,9 +1,9 @@
-package com.sql.inquire;
+package com.dom.component;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class Inquire_Close {
+public class Link_Close {
 	public static void close(java.sql.Statement stmt, ResultSet rs) {
 		// 关闭查询结果
 		try {
