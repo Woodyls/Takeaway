@@ -3,12 +3,12 @@
   <head>
   <meta charset="UTF-8">
     <link href="login.css" rel="stylesheet" type="text/css" />
-    <title>学生信息登陆</title>
+    <title>教师登陆</title>
   </head>
 
   <body>
     <!--登录界面框-->
-    <form class="modal-content animate"  action="loginservlet.do" method="post">
+ <div class="modal-content animate"  >
 
       <!--图片-->
       <div class="imgcontainer">
@@ -18,18 +18,27 @@
       
       <!--输入框与登入按钮-->
       <div class="container">
-        <label><b>学号</b></label>
-        <input type="text" placeholder="Enter Student ID" name="username" required>
+      <form action="loginservlet.do" method="post">
+      <table>
+        <label><b>账号</b></label>
+        <input type="text" placeholder="Enter ID" name="username" required>
+
         <label><b>密码</b></label>
-        <input type="password" placeholder="Enter Password" name="password" required>    
+        <input type="password" placeholder="Enter Password" name="password" required>   
+
         <button type="submit">登录</button>
+
         <input type="checkbox" checked="checked">记住我
+
+        <span class="psw"><a href="resetpassword.html">修改密码</a></span>
+        </table>
+        </form>
       </div>
       
       <!--忘记密码链接-->
       <div class="container" style="background-color:#f1f1f1">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw"><a href="#">忘记密码?</a></span>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">返回</button>
+        <span class="psw"><a href="registered.html">立即注册</a></span>
       </div>
       
       <!--版权，业务许可-->
@@ -37,6 +46,6 @@
         <label><b>版权所有方：******</b></label>
         <br><label><b>业务许可证：******，行政管理：******</b></label></br>
       </div>
-    </form>
+    </div>
   </body>
 </html>

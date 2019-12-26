@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+  <head>  
+    <meta charset="UTF-8" />
+    <title>班级资料删除</title>
+    <link rel="stylesheet" href="0mainpage.css" />  
+  </head>
+  
+  <body>
+  
+    <div class="imgcontainer">
+        <img src="xmut.jpg" alt="Avatar" class="avatar" width="30" height="250">
+    </div>
+
+    <!--功能实现-->
+    <div class="container">
+      <br/>
+      <label><b>请输入要删除的班级</b></label>
+      <input type="text" placeholder="Enter New Class Name"name="NewClassName" required>
+      <br/>
+      <button type="submit">删除</button>
+    </div>
+
+    <div class="section1">    
+      <div class="title">        
+        信息查询▼     
+      </div>      
+      <div class="body">      
+        <span><a href="1ClassStuInfo.html">班级学生信息查询</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="2StuDetailInfo.html">学生详细信息查询</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="3StuGradeInfo.html">学生成绩查询</a></span>
+      </div>    
+    </div>
+    
+    <div class="section2">    
+      <div class="title">        
+        学生管理▼     
+      </div>      
+      <div class="body">      
+        <span><a href="4StuAlter.html">学生资料修改</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="5StuAdd.html">学生资料添加</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="6StuDel.html">学生资料删除</a></span>
+      </div>    
+    </div>
+
+    <div class="section3">    
+      <div class="title">      
+        课程管理▼      
+      </div>      
+      <div class="body">     
+        <span><a href="7CourseAlter.html">课程资料修改</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="8CourseAdd.html">课程资料添加</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="9CourseDel.html">课程资料删除</a></span>
+      </div>    
+    </div>
+  
+    <div class="section4">    
+      <div class="title">      
+        成绩管理▼      
+      </div>
+      <div class="body">      
+        <span><a href="10GradeAlter.html">学生成绩修改</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="11GradeAdd.html">学生成绩添加</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="12GradeDel.html">学生成绩删除</a></span>
+      </div>    
+    </div>
+
+    <div class="section5">    
+      <div class="title">      
+        班级管理▼      
+      </div>
+      <div class="body">      
+        <span><a href="13ClassAlter.html">班级资料修改</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="14ClassAdd.html">班级资料添加</a></span>
+        <br/>  
+        <br/> 
+        <span><a href="15ClassDel.html">班级资料删除</a></span>
+      </div>    
+    </div>
+
+    <div class="section6">    
+      <div class="title">      
+        系统管理▼      
+      </div>
+      <div class="body">      
+        <span><a href="login.html">退出系统</a></span>
+      </div>    
+    </div>
+
+    <script>       
+      !( function( w, d ) {
+        'use strict';        
+        var titles = d.querySelectorAll( '.title' ),          
+          i = 0,
+          len = titles.length;          
+        for ( ; i < len; i++ )
+          titles[ i ].onclick = function( e ) {          
+            for ( var j = 0; j < len; j++ )
+              if ( this != titles[ j ] )
+                titles[ j ].parentNode.className = titles[ j ].parentNode.className.replace( / open/i, '' );          
+            var cn = this.parentNode.className;          
+            this.parentNode.className = ~cn.search( /open/i ) ? cn.replace( / open/i, '' ) : cn + ' open';          
+          };
+      })( this, document );
+    </script>
+
+    
+  
+  </body>
+</html>

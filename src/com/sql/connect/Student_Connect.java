@@ -23,7 +23,7 @@ public class Student_Connect {
 		// 调用连接
 		Get_Component component = new Get_Component();
 		Connection conn = Connect_Pool_Stu.getConnection(stu, component);
-		System.out.println("学生数据库连接成功");
+		// System.out.println("学生数据库连接成功");
 	}
 
 	public void disconnect(Get_Component component) {

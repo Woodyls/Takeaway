@@ -19,15 +19,13 @@ public class Inquire_User {
 
 	public static boolean inquire_person(Teacher tch, Connection conn, Get_Component component) {
 		String sql_tch = Inquire_Command.Select_Teacher();
-		String ID = "Tno";
-		String PW = "Tpw";
+
 		return inquire(tch, conn, component, sql_tch, Table_Att_Par.Teacher_ID(), Table_Att_Par.Teacher_PW());
 	}
 
 	public static boolean inquire_person(Systems sys, Connection conn, Get_Component component) {
 		String sql_sys = Inquire_Command.SELECT_System();
-		String ID = "Syno";
-		String PW = "Sypw";
+
 		return inquire(sys, conn, component, sql_sys, Table_Att_Par.System_ID(), Table_Att_Par.System_PW());
 	}
 
@@ -51,7 +49,7 @@ public class Inquire_User {
 				// 通过字段检索
 				String Link_ID = rs.getString(ID);
 				String Link_PW = rs.getString(PW);
-				// Print_Result(ID, PW);
+				// Print_Result(Link_ID, Link_PW);
 				// Print_Result(person.getID(), person.getPW());
 				if (Link_ID.equals(person.getID()) && Link_PW.equals(person.getPW())) {
 					return true;

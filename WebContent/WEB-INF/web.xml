@@ -11,17 +11,10 @@
   </welcome-file-list>
   
 
-  <servlet>
-      <servlet-name>DatabaseAccess</servlet-name>
-      <servlet-class>demo.DatabaseAccess</servlet-class>
-  </servlet>
-  <servlet-mapping>
-      <servlet-name>DatabaseAccess</servlet-name>
-      <url-pattern>/datebaseaccess.do</url-pattern>
-  </servlet-mapping>
+
   <servlet>
   	<servlet-name>LoginServlet</servlet-name>
-  	<servlet-class>com.character.LoginServlet</servlet-class>
+  	<servlet-class>com.page.dispatch.LoginServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>LoginServlet</servlet-name>

@@ -1,4 +1,4 @@
-package com.character;
+package com.page.dispatch;
 
 import java.io.IOException;
 
@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.character.Student;
 import com.sql.connect.Student_Connect;
 
 public class LoginServlet extends HttpServlet {
@@ -21,12 +22,12 @@ public class LoginServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		String ID = request.getParameter("username");
 		String PW = request.getParameter("password");
-		// System.out.println(ID + " " + PW);
+		System.out.println(ID + "    " + PW);
 		// 连接数据库
 		Student student = new Student(ID, PW);
 		Student_Connect test = new Student_Connect(student);
 		test.Connect();
 		//
-		request.getRequestDispatcher("student.jsp").forward(request, response);
+		request.getRequestDispatcher("0mainpage.html").forward(request, response);
 	}
 }
