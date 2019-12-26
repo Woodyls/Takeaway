@@ -244,6 +244,20 @@ body {
     position: absolute;
 	left: 100px;
 }
+.information {
+    padding: 16px;
+    font-size: 30px;
+    position: absolute;
+	left: 100px;
+	top:  580px;
+}
+.information2 {
+    padding: 16px;
+    font-size: 30px;
+    position: absolute;
+	left: 100px;
+	top:  720px;
+}
 
 input[type=text], input[type=password] {
     width: 400px;

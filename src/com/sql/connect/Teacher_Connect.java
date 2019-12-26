@@ -23,7 +23,7 @@ public class Teacher_Connect {
 	public void Connect() {
 		// 调用连接
 		Get_Component component = new Get_Component();
-		Connection conn = Connect_Pool_Tch.getConnection(tch, component);
+		this.conn = Connect_Pool_Tch.getConnection(tch, component);
 		System.out.println("数据库连接成功");
 	}
 

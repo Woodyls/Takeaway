@@ -18,11 +18,16 @@ public class Student_Connect {
 		return conn;
 	}
 
-	// 单线程
+	// 获取学生信息
+	public Student get_stu() {
+		return stu;
+	}
+
+	// 连接数据库
 	public void Connect() {
 		// 调用连接
 		Get_Component component = new Get_Component();
-		Connection conn = Connect_Pool_Stu.getConnection(stu, component);
+		this.conn = Connect_Pool_Stu.getConnection(stu, component);
 		// System.out.println("学生数据库连接成功");
 	}
 

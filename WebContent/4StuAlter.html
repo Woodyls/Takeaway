@@ -15,17 +15,21 @@
 
     <!--功能实现-->
     <div class="container">
+    <form action="update_stu.do" method="post">
+      <table>
       <br/>  
-      <label><b>请输入学生的学号</b></label>
+      <label><b>学生学号</b></label>
       <input type="text" placeholder="Enter Stu ID"name="StuID" required>
       <br/>
-      <label><b>选择修改信息类型</b></label>
-      <input type="text" placeholder="Name or Class"name="InfoType" required>
+      <label><b>修改姓名</b></label>
+      <input type="text" placeholder="Name or Class"name="Username" required>
       <br/>
-      <label><b>请修改该学号信息</b></label>
-      <input type="text" placeholder="Enter Info"name="Info" required>
+      <label><b>修改班级</b></label>
+      <input type="text" placeholder="Enter Info"name="Classgrade" required>
       <br/>
       <button type="submit">修改</button>
+      </table>
+     </form>
     </div>
 
     <div class="section1">    
@@ -33,13 +37,13 @@
         信息查询▼     
       </div>      
       <div class="body">      
-        <span><a href="1ClassStuInfo.html">班级学生信息查询</a></span>
+        <span><a href="ClassStuInfo.do">班级学生信息查询</a></span>
         <br/>  
         <br/> 
-        <span><a href="2StuDetailInfo.html">学生详细信息查询</a></span>
+        <span><a href="StudentTailInfo.do">学生详细信息查询</a></span>
         <br/>  
         <br/> 
-        <span><a href="3StuGradeInfo.html">学生成绩查询</a></span>
+        <span><a href="StuGradeInfo.do">学生成绩查询</a></span>
       </div>    
     </div>
     
@@ -48,13 +52,13 @@
         学生管理▼     
       </div>      
       <div class="body">      
-        <span><a href="4StuAlter.html">学生资料修改</a></span>
+        <span><a href="StuAlter.do">学生资料修改</a></span>
         <br/>  
         <br/> 
-        <span><a href="5StuAdd.html">学生资料添加</a></span>
+        <span><a href="StuAdd.do">学生资料添加</a></span>
         <br/>  
         <br/> 
-        <span><a href="6StuDel.html">学生资料删除</a></span>
+        <span><a href="StuDel.do">学生资料删除</a></span>
       </div>    
     </div>
 
@@ -63,13 +67,13 @@
         课程管理▼      
       </div>      
       <div class="body">     
-        <span><a href="7CourseAlter.html">课程资料修改</a></span>
+        <span><a href="CourseAlter.do">课程资料修改</a></span>
         <br/>  
         <br/> 
-        <span><a href="8CourseAdd.html">课程资料添加</a></span>
+        <span><a href="CourseAdd.do">课程资料添加</a></span>
         <br/>  
         <br/> 
-        <span><a href="9CourseDel.html">课程资料删除</a></span>
+        <span><a href="CourseDel.do">课程资料删除</a></span>
       </div>    
     </div>
   
@@ -78,13 +82,13 @@
         成绩管理▼      
       </div>
       <div class="body">      
-        <span><a href="10GradeAlter.html">学生成绩修改</a></span>
+        <span><a href="GradeAlter.do">学生成绩修改</a></span>
         <br/>  
         <br/> 
-        <span><a href="11GradeAdd.html">学生成绩添加</a></span>
+        <span><a href="GradeAdd.do">学生成绩添加</a></span>
         <br/>  
         <br/> 
-        <span><a href="12GradeDel.html">学生成绩删除</a></span>
+        <span><a href="GradeDel.do">学生成绩删除</a></span>
       </div>    
     </div>
 
@@ -93,13 +97,13 @@
         班级管理▼      
       </div>
       <div class="body">      
-        <span><a href="13ClassAlter.html">班级资料修改</a></span>
+        <span><a href="ClassAlter.do">班级资料修改</a></span>
         <br/>  
         <br/> 
-        <span><a href="14ClassAdd.html">班级资料添加</a></span>
+        <span><a href="ClassAdd.do">班级资料添加</a></span>
         <br/>  
         <br/> 
-        <span><a href="15ClassDel.html">班级资料删除</a></span>
+        <span><a href="ClassDel.do">班级资料删除</a></span>
       </div>    
     </div>
 
@@ -108,7 +112,7 @@
         系统管理▼      
       </div>
       <div class="body">      
-        <span><a href="login.html">退出系统</a></span>
+        <span><a href="login.do">退出系统</a></span>
       </div>    
     </div>
 

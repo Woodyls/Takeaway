@@ -23,7 +23,7 @@ public class System_Connect {
 	public void Connect() {
 		// 调用连接
 		Get_Component component = new Get_Component();
-		Connection conn = Connect_Pool_Sys.getConnection(sys, component);
+		this.conn = Connect_Pool_Sys.getConnection(sys, component);
 		System.out.println("系统管理员数据库连接成功");
 	}
 

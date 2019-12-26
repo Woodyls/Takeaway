@@ -47,9 +47,9 @@ public class Inquire_User {
 		try {
 			while (rs.next()) {
 				// 通过字段检索
-				String Link_ID = rs.getString(ID);
-				String Link_PW = rs.getString(PW);
-				// Print_Result(Link_ID, Link_PW);
+				String Link_ID = rs.getString("Sno");
+				String Link_PW = rs.getString("Spw");
+				Print_Result(Link_ID, Link_PW);
 				// Print_Result(person.getID(), person.getPW());
 				if (Link_ID.equals(person.getID()) && Link_PW.equals(person.getPW())) {
 					return true;

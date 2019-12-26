@@ -44,6 +44,7 @@ public class Connect_Pool_Stu {
 			// 防止为0的时候，导致异常，所以要进行判断
 			if (Inquire_User.inquire_person(stu, pool_stu.get(0), component)) {
 				connect = pool_stu.remove();
+				System.out.println("登陆成功");
 			} else {
 				System.out.println("查无此人");
 			}

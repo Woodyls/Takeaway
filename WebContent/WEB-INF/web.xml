@@ -20,4 +20,219 @@
   	<servlet-name>LoginServlet</servlet-name>
   	<url-pattern>/loginservlet.do</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Registered</servlet-name>
+  	<servlet-class>com.page.dispatch.Registered</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Registered</servlet-name>
+  	<url-pattern>/registered.do</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>Resetpassword</servlet-name>
+  	<servlet-class>com.page.dispatch.Resetpassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Resetpassword</servlet-name>
+  	<url-pattern>/resetpassword.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Forgotpassword</servlet-name>
+  	<servlet-class>com.page.dispatch.Forgotpassword</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Forgotpassword</servlet-name>
+  	<url-pattern>/forgotpassword.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.page.dispatch.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/login.do</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+  	<servlet-name>ClassStuInfo</servlet-name>
+  	<servlet-class>com.page.dispatch.ClassStuInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClassStuInfo</servlet-name>
+  	<url-pattern>/ClassStuInfo.do</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>StudentTailInfo</servlet-name>
+  	<servlet-class>com.page.dispatch.StudentTailInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StudentTailInfo</servlet-name>
+  	<url-pattern>/StudentTailInfo.do</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  	<servlet-name>StuGradeInfo</servlet-name>
+  	<servlet-class>com.page.dispatch.StuGradeInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StuGradeInfo</servlet-name>
+  	<url-pattern>/StuGradeInfo.do</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  	<servlet-name>StuAlter</servlet-name>
+  	<servlet-class>com.page.dispatch.StuAlter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StuAlter</servlet-name>
+  	<url-pattern>/StuAlter.do</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  	<servlet-name>StuAdd</servlet-name>
+  	<servlet-class>com.page.dispatch.StuAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StuAdd</servlet-name>
+  	<url-pattern>/StuAdd.do</url-pattern>
+  </servlet-mapping>
+  
+
+  
+     <servlet>
+  	<servlet-name>StuDel</servlet-name>
+  	<servlet-class>com.page.dispatch.StuDel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>StuDel</servlet-name>
+  	<url-pattern>/StuDel.do</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  	<servlet-name>CourseAlter</servlet-name>
+  	<servlet-class>com.page.dispatch.CourseAlter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CourseAlter</servlet-name>
+  	<url-pattern>/CourseAlter.do</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>CourseAdd</servlet-name>
+  	<servlet-class>com.page.dispatch.CourseAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CourseAdd</servlet-name>
+  	<url-pattern>/CourseAdd.do</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  	<servlet-name>CourseDel</servlet-name>
+  	<servlet-class>com.page.dispatch.CourseDel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CourseDel</servlet-name>
+  	<url-pattern>/CourseDel.do</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+  	<servlet-name>GradeAlter</servlet-name>
+  	<servlet-class>com.page.dispatch.GradeAlter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GradeAlter</servlet-name>
+  	<url-pattern>/GradeAlter.do</url-pattern>
+  </servlet-mapping>
+
+  
+     <servlet>
+  	<servlet-name>GradeAdd</servlet-name>
+  	<servlet-class>com.page.dispatch.GradeAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GradeAdd</servlet-name>
+  	<url-pattern>/GradeAdd.do</url-pattern>
+  </servlet-mapping>
+     <servlet>
+  	<servlet-name>GradeDel</servlet-name>
+  	<servlet-class>com.page.dispatch.GradeDel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GradeDel</servlet-name>
+  	<url-pattern>/GradeDel.do</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>ClassAlter</servlet-name>
+  	<servlet-class>com.page.dispatch.ClassAlter</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClassAlter</servlet-name>
+  	<url-pattern>/ClassAlter.do</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+  	<servlet-name>ClassAdd</servlet-name>
+  	<servlet-class>com.page.dispatch.ClassAdd</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClassAdd</servlet-name>
+  	<url-pattern>/ClassAdd.do</url-pattern>
+  </servlet-mapping>
+     <servlet>
+  	<servlet-name>ClassDel</servlet-name>
+  	<servlet-class>com.page.dispatch.ClassDel</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClassDel</servlet-name>
+  	<url-pattern>/ClassDel.do</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>ClassGrade</servlet-name>
+  	<servlet-class>com.sql.inquire.ClassGrade</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ClassGrade</servlet-name>
+  	<url-pattern>/classgrade.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Id</servlet-name>
+  	<servlet-class>com.sql.inquire.Id</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Id</servlet-name>
+  	<url-pattern>/inquireid.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Courses</servlet-name>
+  	<servlet-class>com.sql.inquire.Courses</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Courses</servlet-name>
+  	<url-pattern>/courses.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Update_Stud</servlet-name>
+  	<servlet-class>com.sql.inquire.Update_Stud</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Update_Stud</servlet-name>
+  	<url-pattern>/update_stu.do</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

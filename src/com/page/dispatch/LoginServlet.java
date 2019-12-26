@@ -25,9 +25,13 @@ public class LoginServlet extends HttpServlet {
 		System.out.println(ID + "    " + PW);
 		// 连接数据库
 		Student student = new Student(ID, PW);
-		Student_Connect test = new Student_Connect(student);
-		test.Connect();
+		Student_Connect conn = new Student_Connect(student);
+		conn.Connect();
+		System.out.println(conn.get_conn());
 		//
-		request.getRequestDispatcher("0mainpage.html").forward(request, response);
+		if (conn.get_conn() != null) {
+			request.setAttribute("conn", conn);
+			request.getRequestDispatcher("0mainpage.html").forward(request, response);
+		}
 	}
 }
