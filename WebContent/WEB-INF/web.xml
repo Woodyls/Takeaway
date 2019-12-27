@@ -235,4 +235,31 @@
   	<url-pattern>/update_stu.do</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>Stu_Add</servlet-name>
+  	<servlet-class>com.sql.inquire.Stu_Add</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Stu_Add</servlet-name>
+  	<url-pattern>/stu_add.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Stu_Dels</servlet-name>
+  	<servlet-class>com.sql.inquire.Stu_Dels</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Stu_Dels</servlet-name>
+  	<url-pattern>/stu_del.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Update_Courses</servlet-name>
+  	<servlet-class>com.sql.inquire.Update_Courses</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Update_Courses</servlet-name>
+  	<url-pattern>/update_course.do</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

@@ -1,7 +1,9 @@
 .imgcontainer {
     text-align: center;
     margin: 0px 0 10px 0;
-    position: relative;
+    position: absolute;
+	top: 0px;
+	width:2000px;
 }
 
 img.avatar {
@@ -61,7 +63,7 @@ body {
 	transition: .35s;
 	position: absolute;
 	left: 100px;
-	top: 300px;
+	top: 250px;
 	
 }
 
@@ -75,7 +77,7 @@ body {
 	transition: .35s;
 	position: absolute;
 	left: 350px;
-	top: 300px;
+	top: 250px;
 }
 
 .section3 {
@@ -88,7 +90,7 @@ body {
 	transition: .35s;
 	position: absolute;
 	left: 600px;
-	top: 300px;
+	top: 250px;
 }
 
 .section4 {
@@ -101,7 +103,7 @@ body {
 	transition: .35s;
 	position: absolute;
 	left: 850px;
-	top: 300px;
+	top: 250px;
 }
 
 .section5 {
@@ -114,7 +116,7 @@ body {
 	transition: .35s;
 	position: absolute;
 	left: 1100px;
-	top: 300px;
+	top: 250px;
 }
 
 .section6 {
@@ -127,7 +129,7 @@ body {
 	transition: .35s;
 	position: absolute;
 	left: 1350px;
-	top: 300px;
+	top: 250px;
 }
 
 .title {
@@ -243,20 +245,7 @@ body {
     font-size: 30px;
     position: absolute;
 	left: 100px;
-}
-.information {
-    padding: 16px;
-    font-size: 30px;
-    position: absolute;
-	left: 100px;
-	top:  580px;
-}
-.information2 {
-    padding: 16px;
-    font-size: 30px;
-    position: absolute;
-	left: 100px;
-	top:  720px;
+	top:350px;
 }
 
 input[type=text], input[type=password] {
@@ -278,4 +267,19 @@ button {
     cursor: pointer;
     width: 100px;
     font-size: 20px;
+}
+
+.information {
+    padding: 16px;
+    font-size: 30px;
+    position: absolute;
+	left: 100px;
+	top:  580px;
+}
+.information2 {
+    padding: 16px;
+    font-size: 30px;
+    position: absolute;
+	left: 100px;
+	top:  720px;
 }

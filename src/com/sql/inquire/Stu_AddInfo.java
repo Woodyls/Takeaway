@@ -10,8 +10,7 @@ import com.dom.component.Get_Component;
 import com.sql.connect.ConnectInformation;
 import com.sql.connect.DB_Base_Connect_Param;
 
-public class Inquire_Class {
-
+public class Stu_AddInfo {
 	public static void Print_Result(String ID, String PW) {
 		// 输出数据
 		System.out.print("ID: " + ID);
@@ -19,9 +18,9 @@ public class Inquire_Class {
 		System.out.print("\n");
 	}
 
-	public static LinkedList<String> inquire(String sql) throws SQLException {
+	public static LinkedList<String> inquire(String sql, String sql2) throws SQLException {
 
-		LinkedList<String> Stu_List = new LinkedList<String>();
+		LinkedList<String> Stu_Id_List = new LinkedList<String>();
 
 		Get_Component component = new Get_Component();
 		Connection conn = DriverManager.getConnection(ConnectInformation.get_URL(),
@@ -29,8 +28,10 @@ public class Inquire_Class {
 		// 实例化查询
 		java.sql.Statement stmt = component.Get_Statement(conn);
 		// 查询结果
-		ResultSet rs = stmt.executeQuery(sql);
+		stmt.executeUpdate(sql);
+		ResultSet rs = stmt.executeQuery(sql2);
 
+		System.out.println("runing");
 		// 对查询结果进行分析
 		try {
 			while (rs.next()) {
@@ -41,8 +42,7 @@ public class Inquire_Class {
 				String Link_Sname = rs.getString("Sname");
 				String Link_Class = rs.getString("Class");
 				String str = "ID:" + Link_ID + " Sname:" + Link_Sname + " Class:" + Link_Class;
-				Stu_List.add(str);
-				// Stu_List.add("ID:" + Link_ID + " Sname:" + Link_Sname);
+				Stu_Id_List.add(str);
 				Print_Result(Link_Sname, Link_Class);
 				// Print_Result(person.getID(), person.getPW());
 
@@ -54,6 +54,7 @@ public class Inquire_Class {
 		// 关闭查询结果
 		component.Link_Close(stmt, rs);
 
-		return Stu_List;
+		// String[] List = { "11111", "11111", "11111" };
+		return Stu_Id_List;
 	}
 }
